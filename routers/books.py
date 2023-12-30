@@ -4,12 +4,6 @@ router = APIRouter()
 
 @router.get("/")
 def read_root():
-    """
-    A function to read the root path.
-
-    Returns:
-        dict: A dictionary containing the data.
-    """
     return {"data": []}
 
 @router.get("/{book_id}")
